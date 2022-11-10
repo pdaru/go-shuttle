@@ -3,6 +3,7 @@ package handlers
 import (
 	"context"
 	"errors"
+	"fmt"
 	"time"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
@@ -56,24 +57,31 @@ func (plr *peekLockRenewer) startPeriodicRenewal(ctx context.Context, message *s
 	_, span := tracing.StartSpanFromMessageAndContext(ctx, "go-shuttle.peeklock.startPeriodicRenewal", message)
 	defer span.End()
 	count := 0
+	fmt.Printf("in startPeriodicRenewal")
 	for alive := true; alive; {
 		select {
 		case <-time.After(*plr.renewalInterval):
 			count++
 			tab.For(ctx).Debug("Renewing message lock", tab.Int64Attribute("count", int64(count)))
+			fmt.Printf("Renewing message lock")
 			err := plr.lockRenewer.RenewLocks(ctx, message)
+			fmt.Printf("Renewing message lock complete error: %s", err)
 			if err != nil {
+				fmt.Printf("IncMessageLockRenewedFailure")
 				listener.Metrics.IncMessageLockRenewedFailure(message)
 				// I don't think this is a problem. the context is canceled when the message processing is over.
 				// this can happen if we already entered the interval case when the message is completing.
 				tab.For(ctx).Info("failed to renew the peek lock", tab.StringAttribute("reason", err.Error()))
 				return
 			}
+			fmt.Printf("renewed lock success")
 			tab.For(ctx).Debug("renewed lock success")
 			listener.Metrics.IncMessageLockRenewedSuccess(message)
 		case <-ctx.Done():
 			tab.For(ctx).Info("Stopping periodic renewal")
+			fmt.Printf("Stopping periodic renewal")
 			err := ctx.Err()
+			fmt.Printf("Stopping periodic renewal complete error: %s", err)
 			if errors.Is(err, context.DeadlineExceeded) {
 				listener.Metrics.IncMessageDeadlineReachedCount(message)
 			}
