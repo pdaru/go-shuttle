@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/Azure/go-autorest/autorest/adal"
-	topic "github.com/Azure/go-shuttle/topic/publisher"
+	topic "github.com/pdaru/go-shuttle/topic/publisher"
 )
 
 // Deprecated: use topic package

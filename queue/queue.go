@@ -2,9 +2,9 @@ package queue
 
 import (
 	"context"
-	"github.com/Azure/go-shuttle/common/options/listeneropts"
-	"github.com/Azure/go-shuttle/queue/listener"
-	"github.com/Azure/go-shuttle/queue/publisher"
+	"github.com/pdaru/go-shuttle/common/options/listeneropts"
+	"github.com/pdaru/go-shuttle/queue/listener"
+	"github.com/pdaru/go-shuttle/queue/publisher"
 )
 
 func NewListener(opts ...listeneropts.ManagementOption) (*listener.Listener, error) {

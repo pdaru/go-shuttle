@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/Azure/go-autorest/autorest/adal"
-	queue "github.com/Azure/go-shuttle/queue/publisher"
+	queue "github.com/pdaru/go-shuttle/queue/publisher"
 )
 
 // Deprecated: use queue package

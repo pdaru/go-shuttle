@@ -1,4 +1,4 @@
-module github.com/Azure/go-shuttle
+module github.com/pdaru/go-shuttle
 
 go 1.14
 

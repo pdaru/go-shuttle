@@ -5,7 +5,7 @@ import (
 
 	servicebus "github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-autorest/autorest/adal"
-	topic "github.com/Azure/go-shuttle/topic/listener"
+	topic "github.com/pdaru/go-shuttle/topic/listener"
 )
 
 // Deprecated: use topic package

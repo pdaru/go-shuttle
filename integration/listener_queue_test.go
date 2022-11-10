@@ -1,3 +1,4 @@
+//go:build integration
 // +build integration
 
 package integration
@@ -6,7 +7,7 @@ import (
 	"context"
 	"time"
 
-	"github.com/Azure/go-shuttle/queue"
+	"github.com/pdaru/go-shuttle/queue"
 )
 
 // TestCreateNewListenerFromConnectionString tests the creation of a listener with a connection string

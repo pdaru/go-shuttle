@@ -5,7 +5,7 @@ import (
 	"fmt"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/prometheus/listener"
+	"github.com/pdaru/go-shuttle/prometheus/listener"
 )
 
 var _ servicebus.Handler = (*concurrent)(nil)

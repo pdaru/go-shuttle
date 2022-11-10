@@ -6,7 +6,7 @@ import (
 
 	servicebus "github.com/Azure/azure-service-bus-go"
 
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/marshal"
 )
 
 // Message is the wrapping type of service bus message with a type

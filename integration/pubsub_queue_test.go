@@ -13,14 +13,14 @@ import (
 	"github.com/devigned/tab"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/Azure/go-shuttle/common/options/publisheropts"
-	"github.com/Azure/go-shuttle/integration/protomsg"
-	"github.com/Azure/go-shuttle/internal/reflection"
-	"github.com/Azure/go-shuttle/marshal"
-	"github.com/Azure/go-shuttle/message"
-	"github.com/Azure/go-shuttle/queue"
-	"github.com/Azure/go-shuttle/queue/listener"
-	"github.com/Azure/go-shuttle/queue/publisher"
+	"github.com/pdaru/go-shuttle/common/options/publisheropts"
+	"github.com/pdaru/go-shuttle/integration/protomsg"
+	"github.com/pdaru/go-shuttle/internal/reflection"
+	"github.com/pdaru/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/message"
+	"github.com/pdaru/go-shuttle/queue"
+	"github.com/pdaru/go-shuttle/queue/listener"
+	"github.com/pdaru/go-shuttle/queue/publisher"
 )
 
 // TestPublishAndListenWithConnectionStringUsingDefault tests both the publisher and listener with default configurations

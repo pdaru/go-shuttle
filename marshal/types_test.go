@@ -3,7 +3,7 @@ package marshal_test
 import (
 	"testing"
 
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/marshal"
 )
 
 type customMarshaller struct {

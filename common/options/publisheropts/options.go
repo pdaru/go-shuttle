@@ -7,10 +7,10 @@ import (
 	servicebus "github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-autorest/autorest/adal"
 
-	"github.com/Azure/go-shuttle/common"
-	"github.com/Azure/go-shuttle/internal/aad"
-	sbinternal "github.com/Azure/go-shuttle/internal/servicebus"
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/internal/aad"
+	sbinternal "github.com/pdaru/go-shuttle/internal/servicebus"
+	"github.com/pdaru/go-shuttle/marshal"
 )
 
 // ManagementOption provides structure for configuring a new Publisher

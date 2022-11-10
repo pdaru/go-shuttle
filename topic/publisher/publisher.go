@@ -6,16 +6,16 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/Azure/go-shuttle/common/errorhandling"
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/common/errorhandling"
+	"github.com/pdaru/go-shuttle/marshal"
 
 	amqp "github.com/Azure/azure-amqp-common-go/v3"
 	servicebus "github.com/Azure/azure-service-bus-go"
 	"github.com/devigned/tab"
 
-	"github.com/Azure/go-shuttle/common"
-	"github.com/Azure/go-shuttle/internal/reflection"
-	"github.com/Azure/go-shuttle/prometheus/publisher"
+	"github.com/pdaru/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/internal/reflection"
+	"github.com/pdaru/go-shuttle/prometheus/publisher"
 )
 
 type TopicPublisher interface {

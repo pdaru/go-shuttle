@@ -4,8 +4,8 @@ import (
 	"context"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/message"
 	"github.com/devigned/tab"
+	"github.com/pdaru/go-shuttle/message"
 )
 
 var _ servicebus.Handler = (*shuttleAdapter)(nil)

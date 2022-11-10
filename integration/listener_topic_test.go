@@ -1,16 +1,17 @@
+//go:build integration
 // +build integration
 
 package integration
 
 import (
 	"context"
-	"github.com/Azure/go-shuttle/topic"
-	"github.com/Azure/go-shuttle/topic/listener"
+	"github.com/pdaru/go-shuttle/topic"
+	"github.com/pdaru/go-shuttle/topic/listener"
 	"strings"
 	"time"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/message"
+	"github.com/pdaru/go-shuttle/message"
 )
 
 // TestCreateNewListenerFromConnectionString tests the creation of a listener with a connection string

@@ -7,9 +7,9 @@ import (
 	"time"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/prometheus/listener"
-	"github.com/Azure/go-shuttle/tracing"
 	"github.com/devigned/tab"
+	"github.com/pdaru/go-shuttle/prometheus/listener"
+	"github.com/pdaru/go-shuttle/tracing"
 )
 
 type EntityInfoProvider interface {

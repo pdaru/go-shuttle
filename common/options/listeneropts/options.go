@@ -3,14 +3,14 @@ package listeneropts
 import (
 	"errors"
 	"fmt"
-	"github.com/Azure/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/common"
 	"reflect"
 	"time"
 
 	"github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-autorest/autorest/adal"
-	"github.com/Azure/go-shuttle/internal/aad"
-	sbinternal "github.com/Azure/go-shuttle/internal/servicebus"
+	"github.com/pdaru/go-shuttle/internal/aad"
+	sbinternal "github.com/pdaru/go-shuttle/internal/servicebus"
 )
 
 // Option provides structure for configuring when starting to listen to a specified topic

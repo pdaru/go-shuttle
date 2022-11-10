@@ -4,7 +4,7 @@ import (
 	"context"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/tracing"
+	"github.com/pdaru/go-shuttle/tracing"
 )
 
 // Complete will notify Azure Service Bus that the message was successfully handled and should be deleted from the queue

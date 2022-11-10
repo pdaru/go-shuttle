@@ -9,8 +9,8 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/go-shuttle/queue"
-	"github.com/Azure/go-shuttle/queue/publisher"
+	"github.com/pdaru/go-shuttle/queue"
+	"github.com/pdaru/go-shuttle/queue/publisher"
 	"github.com/stretchr/testify/require"
 )
 

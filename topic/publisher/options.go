@@ -6,9 +6,9 @@ import (
 	"github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-autorest/autorest/adal"
 
-	"github.com/Azure/go-shuttle/common"
-	"github.com/Azure/go-shuttle/common/options/publisheropts"
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/common/options/publisheropts"
+	"github.com/pdaru/go-shuttle/marshal"
 )
 
 // ManagementOption provides structure for configuring a new Publisher

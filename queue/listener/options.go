@@ -2,7 +2,7 @@ package listener
 
 import (
 	"github.com/Azure/go-autorest/autorest/adal"
-	"github.com/Azure/go-shuttle/common/options/listeneropts"
+	"github.com/pdaru/go-shuttle/common/options/listeneropts"
 	"time"
 )
 

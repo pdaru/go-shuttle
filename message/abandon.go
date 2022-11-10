@@ -4,7 +4,7 @@ import (
 	"context"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/tracing"
+	"github.com/pdaru/go-shuttle/tracing"
 )
 
 // Abandon stops processing the message and releases the lock on it.

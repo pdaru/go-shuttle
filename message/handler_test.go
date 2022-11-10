@@ -11,7 +11,7 @@ import (
 	. "github.com/onsi/gomega"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/message"
+	"github.com/pdaru/go-shuttle/message"
 )
 
 var completeHandler = message.HandleFunc(func(ctx context.Context, m *message.Message) message.Handler {

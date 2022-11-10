@@ -11,9 +11,9 @@ import (
 	"github.com/Azure/go-autorest/autorest/adal"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/Azure/go-shuttle/internal/test"
-	"github.com/Azure/go-shuttle/queue/listener"
-	"github.com/Azure/go-shuttle/queue/publisher"
+	"github.com/pdaru/go-shuttle/internal/test"
+	"github.com/pdaru/go-shuttle/queue/listener"
+	"github.com/pdaru/go-shuttle/queue/publisher"
 )
 
 type serviceBusQueueSuite struct {

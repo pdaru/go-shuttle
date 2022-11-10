@@ -8,8 +8,8 @@ import (
 
 	"github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-autorest/autorest/adal"
-	"github.com/Azure/go-shuttle/common"
-	"github.com/Azure/go-shuttle/common/options/listeneropts"
+	"github.com/pdaru/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/common/options/listeneropts"
 )
 
 type Option = listeneropts.Option

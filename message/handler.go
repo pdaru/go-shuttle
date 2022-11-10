@@ -4,7 +4,7 @@ import (
 	"context"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/tracing"
+	"github.com/pdaru/go-shuttle/tracing"
 )
 
 // HandleFunc is a func to handle the message received from a subscription

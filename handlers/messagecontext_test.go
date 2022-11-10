@@ -6,7 +6,7 @@ import (
 	"time"
 
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/handlers"
+	"github.com/pdaru/go-shuttle/handlers"
 	"github.com/stretchr/testify/assert"
 )
 

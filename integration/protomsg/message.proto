@@ -1,5 +1,5 @@
 syntax = "proto3";
-option go_package = "github.com/Azure/go-shuttle/integration/protomsg";
+option go_package = "github.com/pdaru/go-shuttle/integration/protomsg";
 
 package protomsg;
 

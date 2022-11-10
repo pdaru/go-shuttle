@@ -1,3 +1,4 @@
+//go:build integration
 // +build integration
 
 package integration
@@ -9,12 +10,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/Azure/go-shuttle/topic"
-	"github.com/Azure/go-shuttle/topic/listener"
+	"github.com/pdaru/go-shuttle/topic"
+	"github.com/pdaru/go-shuttle/topic/listener"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Azure/go-shuttle/message"
 	"github.com/devigned/tab"
+	"github.com/pdaru/go-shuttle/message"
 	"github.com/stretchr/testify/assert"
 )
 

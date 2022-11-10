@@ -1,8 +1,8 @@
 package prometheus
 
 import (
-	"github.com/Azure/go-shuttle/prometheus/listener"
-	"github.com/Azure/go-shuttle/prometheus/publisher"
+	"github.com/pdaru/go-shuttle/prometheus/listener"
+	"github.com/pdaru/go-shuttle/prometheus/publisher"
 	"github.com/prometheus/client_golang/prometheus"
 )
 

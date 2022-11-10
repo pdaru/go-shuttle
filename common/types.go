@@ -5,7 +5,7 @@ import (
 
 	servicebus "github.com/Azure/azure-service-bus-go"
 
-	"github.com/Azure/go-shuttle/marshal"
+	"github.com/pdaru/go-shuttle/marshal"
 )
 
 var _ Listener = &ListenerSettings{}

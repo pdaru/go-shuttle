@@ -5,11 +5,11 @@ import (
 	"errors"
 	"fmt"
 	servicebus "github.com/Azure/azure-service-bus-go"
-	"github.com/Azure/go-shuttle/common"
-	"github.com/Azure/go-shuttle/common/options/listeneropts"
-	"github.com/Azure/go-shuttle/handlers"
-	"github.com/Azure/go-shuttle/message"
 	"github.com/devigned/tab"
+	"github.com/pdaru/go-shuttle/common"
+	"github.com/pdaru/go-shuttle/common/options/listeneropts"
+	"github.com/pdaru/go-shuttle/handlers"
+	"github.com/pdaru/go-shuttle/message"
 )
 
 const (

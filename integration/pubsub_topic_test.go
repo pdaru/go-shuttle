@@ -15,11 +15,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"
 
-	"github.com/Azure/go-shuttle/internal/reflection"
-	"github.com/Azure/go-shuttle/message"
-	"github.com/Azure/go-shuttle/topic"
-	"github.com/Azure/go-shuttle/topic/listener"
-	"github.com/Azure/go-shuttle/topic/publisher"
+	"github.com/pdaru/go-shuttle/internal/reflection"
+	"github.com/pdaru/go-shuttle/message"
+	"github.com/pdaru/go-shuttle/topic"
+	"github.com/pdaru/go-shuttle/topic/listener"
+	"github.com/pdaru/go-shuttle/topic/publisher"
 )
 
 // TestPublishAndListenWithConnectionStringUsingDefault tests both the publisher and listener with default configurations

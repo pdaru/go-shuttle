@@ -6,7 +6,7 @@ import (
 
 	servicebus "github.com/Azure/azure-service-bus-go"
 	"github.com/Azure/go-amqp"
-	"github.com/Azure/go-shuttle/tracing"
+	"github.com/pdaru/go-shuttle/tracing"
 )
 
 // Error is a wrapper around Abandon() that allows to trace the error before abandoning the message
